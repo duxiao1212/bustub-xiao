@@ -187,6 +187,7 @@ TEST(HyperLogLogTest, ParallelTest1) {
 }
 
 TEST(HyperLogLogTest, DISABLED_PrestoBasicTest1) {
+
   auto obj = HyperLogLogPresto<std::string>(static_cast<int16_t>(2));
   ASSERT_EQ(obj.GetCardinality(), 0);
 
